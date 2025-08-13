@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-g">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Staff Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="portal-content">
+        <header>
+            <img src="logo.png" alt="Hospital Logo" class="logo">
+            <h1>Dubti General Hospital</h1>
+            <nav>
+                <a href="#news">News</a>
+                <a href="#library">Library</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="news">
+                <h2>Latest News</h2>
+                <div class="news-container">
+                    <article class="news-item">
+                        <h3>New Wing Opening</h3>
+                        <p>The new cardiology wing is set to open on September 15th. The state-of-the-art facility will enhance our patient care capabilities. <span class="more-text">More details about the opening ceremony and the new facilities will be shared soon.</span></p>
+                        <button class="read-more-btn">Read More</button>
+                        <p class="news-date">August 12, 2025</p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Annual Staff Awards</h3>
+                        <p>Nominations for the annual staff awards are now open. Please submit your nominations by the end of the month. <span class="more-text">The award categories include clinical excellence, patient care, and innovation.</span></p>
+                        <button class="read-more-btn">Read More</button>
+                        <p class="news-date">August 10, 2025</p>
+                    </article>
+                    <article class="news-item">
+                        <h3>Health and Safety Training</h3>
+                        <p>All staff are required to complete the updated health and safety training module by October 1st. <span class="more-text">This training is mandatory for all departments and is crucial for maintaining a safe environment for both staff and patients.</span></p>
+                        <button class="read-more-btn">Read More</button>
+                        <p class="news-date">August 9, 2025</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="library">
+                <h2>Resource Library</h2>
+                <div class="library-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="clinical">Clinical</button>
+                    <button class="filter-btn" data-category="research">Research</button>
+                    <button class="filter-btn" data-category="training">Training</button>
+                    <button class="filter-btn" data-category="forms">Forms</button>
+                </div>
+                <input type="text" id="library-search" placeholder="Search library resources...">
+                <div class="library-container">
+                    <div class="library-item" data-category="clinical">
+                        <h4>Clinical Guidelines</h4>
+                        <p>Updated guidelines for patient care.</p>
+                        <a href="#">Download PDF</a>
+                    </div>
+                    <div class="library-item" data-category="research">
+                        <h4>Research Papers</h4>
+                        <p>Latest research from our team.</p>
+                        <a href="#">View Collection</a>
+                    </div>
+                    <div class="library-item" data-category="training">
+                        <h4>Training Materials</h4>
+                        <p>Presentations and videos from recent training sessions.</p>
+                        <a href="#">Access Files</a>
+                    </div>
+                    <div class="library-item" data-category="forms">
+                        <h4>Hospital Forms</h4>
+                        <p>Downloadable forms for various departments.</p>
+                        <a href="#">Find Form</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Dubti General Hospital. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
